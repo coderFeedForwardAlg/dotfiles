@@ -1,0 +1,1 @@
+/home/mgs/.config/omarchy/current/theme/neovim.lua
