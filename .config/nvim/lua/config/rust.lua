@@ -4,7 +4,16 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        rust_analyzer = {},
+        rust_analyzer = {
+          cache = {
+            warmup = {
+              enable = false, -- Prevents massive initial analysis
+            },
+          },
+          checkOnSave = {
+            enable = false, -- Stops running 'cargo check' on every file save
+          },
+        },
       },
     },
   },
