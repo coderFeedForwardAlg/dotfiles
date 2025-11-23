@@ -2,3 +2,4 @@
 require("config.lazy")
 vim.opt.tags = "./tags;,tags;"
 opts = { ensure_installed = { "rust", "ron" } }
+vim.opt.relativenumber = true
